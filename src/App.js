@@ -8,15 +8,22 @@
 
 
 import React from "react";
+import { Helmet } from "react-helmet";
 import MainGenerator from "./components/MainGenerator";
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";
+import thumbnail from "./logo.png"
 
 
 function App() {
 
   return (
       <div className="flex flex-col justify-center items-center h-full w-full min-h-screen">
+        <Helmet>
+          <title>Bannerfy</title>
+          <meta name="description" content="Banners that get you views!" />
+          <meta name="image" content={thumbnail} />
+        </Helmet>
         <Navbar />
         <Title />
         <MainGenerator />
