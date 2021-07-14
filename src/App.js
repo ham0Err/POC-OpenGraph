@@ -8,7 +8,6 @@
 
 
 import React from "react";
-import { Helmet } from "react-helmet";
 import MainGenerator from "./components/MainGenerator";
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";
@@ -17,28 +16,6 @@ function App() {
 
   return (
     <>
-      <Helmet>
-        {/* <!-- Google Verification Meta Tag --> */}
-        <meta name="google-site-verification" content="Qoyer8OXT8RsZfZ_0y8S_fyUlBt8gQzu9P3JZrQbavk" />
-        {/* <!-- Primary Meta Tags --> */}
-        <title>Bannerfy - Banners that get you clicks!</title>
-        <meta name="title" content="Bannerfy - Banners that get you clicks!"/>
-        <meta name="description" content="Generate your own banner in 5 easy steps, and watch your clickrate grow!"/>
-
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://poc-open-graph.vercel.app"/>
-        <meta property="og:title" content="Bannerfy - Banners that get you clicks!"/>
-        <meta property="og:description" content="Generate your own banner in 5 easy steps, and watch your clickrate grow!"/>
-        <meta property="og:image" content="https://www.pexels.com/photo/turned-on-pendant-lamp-132340/"/>
-
-        {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:url" content="https://poc-open-graph.vercel.app"/>
-        <meta property="twitter:title" content="Bannerfy - Banners that get you clicks"/>
-        <meta property="twitter:description" content="Generate your own banner in 5 easy steps, and watch your clickrate grow!"/>
-        <meta property="twitter:image" content="https://www.pexels.com/photo/turned-on-pendant-lamp-132340/"/>
-      </Helmet>
       <div className="flex flex-col justify-center items-center h-full w-full min-h-screen">
         <Navbar />
         <Title />
