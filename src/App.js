@@ -18,6 +18,8 @@ function App() {
   return (
     <>
       <Helmet>
+        {/* <!-- Google Verification Meta Tag --> */}
+        <meta name="google-site-verification" content="Qoyer8OXT8RsZfZ_0y8S_fyUlBt8gQzu9P3JZrQbavk" />
         {/* <!-- Primary Meta Tags --> */}
         <title>Bannerfy - Banners that get you clicks!</title>
         <meta name="title" content="Bannerfy - Banners that get you clicks!"/>
