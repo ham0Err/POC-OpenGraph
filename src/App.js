@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// 1. create individual components for changing properties of background
+// a. List out properties to allow (ref sites listed)
+// b. create one component, allow user to select desired properties
+// c. allow changes made to reflect on the background shown
+//
+// 2. implement multiple components (text, font, size, color, border etc)
+// 3. implement SVGs or design elements, user pref or random generated
+
+
+import React from "react";
+import MainGenerator from "./components/MainGenerator";
+import Navbar from "./components/Navbar";
+import Title from "./components/Title";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="flex flex-col justify-center items-center h-full w-full min-h-screen">
+        <Navbar />
+        <Title />
+        <MainGenerator />
+      </div>
   );
 }
 
