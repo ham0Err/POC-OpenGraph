@@ -12,19 +12,30 @@ import { Helmet } from "react-helmet";
 import MainGenerator from "./components/MainGenerator";
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";
-import thumbnail from "./logo.png"
-
 
 function App() {
 
   return (
     <>
       <Helmet>
-        <title>Bannerfy</title>
-        <meta name="twitter:card" content="summary"/>
-        <meta name="og:title" property="Bannerfy" data-react-helmet="true"/>
-        <meta name="og:description" property="Banners that get you views!" data-react-helmet="true"/>
-        <meta name="og:image" property={thumbnail} data-react-helmet="true"/>
+        {/* <!-- Primary Meta Tags --> */}
+        <title>Bannerfy - Banners that get you clicks!</title>
+        <meta name="title" content="Bannerfy - Banners that get you clicks!"/>
+        <meta name="description" content="Generate your own banner in 5 easy steps, and watch your clickrate grow!"/>
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://poc-open-graph.vercel.app"/>
+        <meta property="og:title" content="Bannerfy - Banners that get you clicks!"/>
+        <meta property="og:description" content="Generate your own banner in 5 easy steps, and watch your clickrate grow!"/>
+        <meta property="og:image" content="https://www.pexels.com/photo/turned-on-pendant-lamp-132340/"/>
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://poc-open-graph.vercel.app"/>
+        <meta property="twitter:title" content="Bannerfy - Banners that get you clicks"/>
+        <meta property="twitter:description" content="Generate your own banner in 5 easy steps, and watch your clickrate grow!"/>
+        <meta property="twitter:image" content="https://www.pexels.com/photo/turned-on-pendant-lamp-132340/"/>
       </Helmet>
       <div className="flex flex-col justify-center items-center h-full w-full min-h-screen">
         <Navbar />
