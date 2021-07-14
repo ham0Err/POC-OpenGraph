@@ -21,8 +21,8 @@ function App() {
     <>
       <Helmet>
         <title>Bannerfy</title>
-        <meta name="description" content="Banners that get you views!" />
-        <meta name="image" content={thumbnail} />
+        <meta name="description" content="Banners that get you views!" data-react-helmet="true"/>
+        <meta name="image" content={thumbnail} data-react-helmet="true"/>
       </Helmet>
       <div className="flex flex-col justify-center items-center h-full w-full min-h-screen">
         <Navbar />
