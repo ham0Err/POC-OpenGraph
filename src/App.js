@@ -21,8 +21,10 @@ function App() {
     <>
       <Helmet>
         <title>Bannerfy</title>
-        <meta name="description" content="Banners that get you views!" data-react-helmet="true"/>
-        <meta name="image" content={thumbnail} data-react-helmet="true"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="og:title" property="Bannerfy" data-react-helmet="true"/>
+        <meta name="og:description" property="Banners that get you views!" data-react-helmet="true"/>
+        <meta name="og:image" property={thumbnail} data-react-helmet="true"/>
       </Helmet>
       <div className="flex flex-col justify-center items-center h-full w-full min-h-screen">
         <Navbar />
